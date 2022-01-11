@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+
+
+</head>
+
+<body>
+
+    <div class="form-body d-flex justify-content-center">
+        <div class="row  ">
+            <div class="form-holder ">
+                <div class="form-content d-flex justify-content-center">
+                    <form id="myform" action="">
+                    <div class="form-items">
+                        <h1>fiilup form</h1>
+                        <div class="col-md-12">
+                            <input class="form-control" id="name" type="text" name="name" placeholder="Full Name"
+                                required>
+                        </div>
+
+                        <div class=" d-flex col-md-12">
+                            <input class="form-control" id="email" type="email" name="email"
+                                placeholder="E-mail Address" required>
+                            <button onclick="createEmail()">+</button>
+                        </div>
+
+                        <div id="inputbtn">
+
+                        </div>
+                        <div class="col-md-12 d-flex ">
+                            <input class="form-control" id="phone" type="number" name="phone" placeholder="Phone"
+                                required>
+                            <button onclick="createPhone()">+</button>
+                        </div>
+
+                        <div id="addphone">
+
+                        </div>
+
+                        <div class="form-button my-5 mt-3">
+                            <button id="submit" onclick="pushData()" id="btn" type="submit"
+                                class="btn btn-primary">Register</button>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- secound display -->
+
+        <div class="row ">
+            <div class="form-holder ">
+                <div class="form-content ">
+                    <div class="form-items">
+
+
+                        <h1 style="color: white;">this is display</h1>
+
+
+                        <!-- bootstrap table -->
+
+                        <table class="table table-dark table-striped">
+                            <thead>
+                                <tr>
+
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col" id="addEmails" style="display: none;">Additional Email(s)</th>
+                                    <th scope="col" id="addPhones" style="display: none;">Additional Phone(s)</th>
+                                    <th scope="col">phone</th>
+
+                                </tr>
+                            </thead>
+                            <tbody id="display">
+
+
+                            </tbody>
+                        </table>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
